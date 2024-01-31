@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --ff-urbanist: "Urbanist", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+
+  --body-color: #0f0d25;
+  --body-font: #fff;
+  --dark-slate-blue: #434159;
+  --light-grey: rgba(203, 203, 203, 0.22);
+  --deep-pink: #f64986;
+  --slate-blue: #5f54f1;
+  --border-color-dark: #363447;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Josh's Custom CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  color: var(--body-font);
+  font-family: var(--ff-urbanist);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a,
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: var(--body-font);
+  font-family: var(--ff-poppins);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h1 {
+  letter-spacing: -0.03rem;
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
+  font-family: Urbanist, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+}
+
+.flex[direction="row"] {
+  display: flex;
+  flex-direction: row;
+}
+.flex[direction="col"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  gap: 3.5em;
+  @media (min-width: 480px) {
+    gap: 5em;
+  }
+}
