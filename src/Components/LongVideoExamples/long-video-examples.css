@@ -1,0 +1,68 @@
+.long-video-examples-section {
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+  padding-inline: 1em;
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .long-video-wrapper {
+    width: 100%;
+    display: grid;
+    row-gap: 2em;
+    column-gap: 1em;
+
+    .long-video {
+      gap: 1em;
+      align-items: center;
+
+      h3 {
+        line-height: 2rem;
+        font-weight: 500;
+        font-size: 1.25rem;
+        strong {
+          line-height: 2.35rem;
+          font-size: 1.65rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .long-video-examples-section {
+    padding-inline: 2em;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    .long-video-wrapper {
+      grid-template-columns: 1fr 1fr;
+
+      .even:nth-child(1),
+      .even:nth-child(2) {
+        grid-column: span 2;
+      }
+
+      .odd:nth-child(1) {
+        grid-column: span 2;
+      }
+
+      .long-video {
+        h3 {
+          /* line-height: 2.35rem; */
+          font-size: 1.5rem;
+          strong {
+            font-size: 1.65rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -33,3 +33,26 @@ export const featuredTestimonials = [
   },
   { name: "Kai Bax", company: "ScaleClients.io", image: featuredTestimonial2 },
 ];
+
+export const longVideoExamples = [
+  {
+    name: "Daniel Fazio (Cold Email Wizard📩)",
+    company: "Co-Founder @ Client Ascension",
+    videoURL: "https://www.youtube.com/embed/ZFI8LE6EoTQ?si=qr8zeI_3vIKbzwUM",
+  },
+  {
+    name: "Daniel Fazio (Cold Email Wizard📩)",
+    company: "Co-Founder @ Client Ascension",
+    videoURL: "https://www.youtube.com/embed/ZFI8LE6EoTQ?si=qr8zeI_3vIKbzwUM",
+  },
+  {
+    name: "Daniel Fazio (Cold Email Wizard📩)",
+    company: "Co-Founder @ Client Ascension",
+    videoURL: "https://www.youtube.com/embed/ZFI8LE6EoTQ?si=qr8zeI_3vIKbzwUM",
+  },
+  {
+    name: "Daniel Fazio (Cold Email Wizard📩)",
+    company: "Co-Founder @ Client Ascension",
+    videoURL: "https://www.youtube.com/embed/ZFI8LE6EoTQ?si=qr8zeI_3vIKbzwUM",
+  },
+];

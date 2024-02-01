@@ -2,6 +2,7 @@
 import React from "react";
 import { heroTitle } from "../../data";
 import "./hero.css";
+import { Button } from "../UtilityComponents";
 
 const Hero = () => {
   return (
@@ -29,12 +30,12 @@ const Hero = () => {
 
       <div className="hero-video flex" direction="col">
         <div className="button-wrapper flex" direction="row">
-          <div className="book-call-button">
-            <a href="/book-a-call">book a call</a>
-          </div>
-          <div className="see-work-button">
-            <a href="/book-a-call">see our work</a>
-          </div>
+          <Button className="gradient-btn" href="book-a-call">
+            book a call
+          </Button>
+          <Button className="transparent-btn" href="book-a-call">
+            see our work
+          </Button>
         </div>
       </div>
     </section>
