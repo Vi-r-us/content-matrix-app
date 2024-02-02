@@ -2,7 +2,7 @@
 import React from "react";
 import { heroTitle } from "../../data";
 import "./hero.css";
-import { Button } from "../UtilityComponents";
+import { Button, YoutubeVideo } from "../UtilityComponents";
 
 const Hero = () => {
   return (
@@ -29,6 +29,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-video flex" direction="col">
+        <YoutubeVideo videoURL="https://www.youtube.com/embed/VUDQL8B1Bb4?si=hqK2z0yxV5vT9oBi" />
         <div className="button-wrapper flex" direction="row">
           <Button className="gradient-btn" href="book-a-call">
             book a call

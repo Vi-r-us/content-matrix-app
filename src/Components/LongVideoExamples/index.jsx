@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
-import { LongVideo } from "../UtilityComponents";
+import { Button, YoutubeVideo } from "../UtilityComponents";
 import "./long-video-examples.css";
 import { longVideoExamples } from "../../data";
 
@@ -17,6 +17,9 @@ const LongVideoExamples = () => {
           />
         ))}
       </div>
+      <Button className={"gradient-btn"} href={"book-a-call"}>
+        book a call
+      </Button>
     </section>
   );
 };
@@ -49,7 +52,11 @@ const LongVideoDiv = ({ longVideo, isEven }) => {
         <br />
         {company}
       </h3>
-      <LongVideo parentWidth={width} videoURL={videoURL} />
+      <YoutubeVideo
+        className={"long-format-video"}
+        parentWidth={width}
+        videoURL={videoURL}
+      />
     </div>
   );
 };

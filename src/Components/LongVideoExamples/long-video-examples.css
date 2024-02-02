@@ -1,9 +1,13 @@
 .long-video-examples-section {
   gap: 2em;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding-inline: 1em;
 
+  > * {
+    max-width: 1575px;
+  }
   h2 {
     font-size: 2.25rem;
     line-height: 3.2rem;
@@ -45,13 +49,33 @@
     .long-video-wrapper {
       grid-template-columns: 1fr 1fr;
 
-      .even:nth-child(1),
-      .even:nth-child(2) {
-        grid-column: span 2;
+      .even {
+        &:nth-child(2n),
+        &:nth-child(2n + 1) {
+          iframe {
+            width: 90%;
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          grid-column: span 2;
+          margin-inline: 0;
+        }
       }
 
-      .odd:nth-child(1) {
-        grid-column: span 2;
+      .odd {
+        &:nth-child(2n + 1) {
+          margin-right: auto;
+        }
+        &:nth-child(2n) {
+          margin-left: auto;
+        }
+
+        &:nth-child(1) {
+          grid-column: span 2;
+          margin-inline: 0;
+        }
       }
 
       .long-video {

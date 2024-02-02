@@ -111,8 +111,12 @@ h1 {
 }
 
 .page-content {
+  padding-block: 1em;
+  padding-bottom: 2.5em;
   gap: 3.5em;
   @media (min-width: 480px) {
     gap: 5em;
+    padding-block: 2em;
+    padding-bottom: 3.75em;
   }
 }

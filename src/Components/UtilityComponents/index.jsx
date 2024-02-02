@@ -10,8 +10,8 @@ export const Button = ({ className, href, children }) => {
   );
 };
 
-export const LongVideo = ({ className, videoURL, parentWidth }) => {
-  console.log(videoURL);
+export const YoutubeVideo = ({ className, videoURL, parentWidth }) => {
+  // console.log(videoURL);
   return (
     <iframe
       className={`yt-video ${className}`}

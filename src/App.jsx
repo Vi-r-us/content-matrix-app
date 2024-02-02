@@ -3,6 +3,7 @@ import Hero from "./Components/Hero";
 import LongVideoExamples from "./Components/LongVideoExamples";
 import Navbar from "./Components/Navbar";
 import Partners from "./Components/Partners";
+import ShortVideoExamples from "./Components/ShortVideoExamples";
 import Testimonials from "./Components/Testimonials";
 import "./index.css";
 
@@ -16,6 +17,7 @@ function App() {
         <FeaturedTestimonials />
         <Testimonials />
         <LongVideoExamples />
+        <ShortVideoExamples />
       </main>
     </>
   );

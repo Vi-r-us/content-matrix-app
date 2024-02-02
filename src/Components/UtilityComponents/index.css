@@ -31,15 +31,22 @@
 }
 
 .yt-video {
+  border-radius: 1em;
+}
+.yt-video.long-format-video {
   max-width: 1060px;
   width: 100%;
   aspect-ratio: 16 / 9;
-
   @media screen and (min-width: 480px) {
     width: 90%;
   }
   @media screen and (min-width: 990px) {
     width: 70%;
   }
-  border-radius: 1em;
+}
+
+.yt-video.short-format-video {
+  max-width: 1060px;
+  width: 100%;
+  aspect-ratio: 9 / 16;
 }

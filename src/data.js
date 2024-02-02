@@ -56,3 +56,12 @@ export const longVideoExamples = [
     videoURL: "https://www.youtube.com/embed/ZFI8LE6EoTQ?si=qr8zeI_3vIKbzwUM",
   },
 ];
+
+export const shortVideoExamples = [
+  "https://www.youtube.com/embed/q8cjGfTq5XI?si=O0QEyXOwSJzmiU3y",
+  "https://www.youtube.com/embed/q8cjGfTq5XI?si=O0QEyXOwSJzmiU3y",
+  "https://www.youtube.com/embed/q8cjGfTq5XI?si=O0QEyXOwSJzmiU3y",
+  "https://www.youtube.com/embed/q8cjGfTq5XI?si=O0QEyXOwSJzmiU3y",
+  "https://www.youtube.com/embed/q8cjGfTq5XI?si=O0QEyXOwSJzmiU3y",
+  "https://www.youtube.com/embed/q8cjGfTq5XI?si=O0QEyXOwSJzmiU3y",
+];
