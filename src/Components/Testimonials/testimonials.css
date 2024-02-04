@@ -3,6 +3,9 @@
   text-align: center;
   gap: 2em;
   padding-inline: 1em;
+  > * {
+    max-width: 1560px;
+  }
 
   h2 {
     font-weight: 600;
@@ -23,6 +26,102 @@
 
     @media screen and (min-width: 480px) {
       font-size: 3rem;
+    }
+  }
+
+  .testimonials-slider {
+    /* mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    ); */
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    position: relative;
+
+    .arrow-left,
+    .arrow-right {
+      z-index: 10;
+      color: black;
+      scale: 2;
+      cursor: pointer;
+      /* border: 1px solid white; */
+      background-color: white;
+      border-radius: 50vh;
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+    }
+    .arrow-left {
+      left: 0.5em;
+    }
+    .arrow-right {
+      right: 0.5em;
+    }
+
+    .testimonials-carousel {
+      width: 100%;
+      align-items: center;
+      gap: 1em;
+      padding-inline: 1em;
+      scroll-behavior: smooth;
+      transition: all 0.5s;
+
+      .testimonial {
+        flex: 0 0 100%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          object-fit: cover;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .testimonials-section {
+    .testimonials-slider {
+      .testimonials-carousel {
+        padding-inline: 1em 2em;
+        .testimonial {
+          flex: 0 0 calc(100% / 2);
+          border-radius: 10px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .testimonials-section {
+    .testimonials-slider {
+      .testimonials-carousel {
+        padding-inline: 1em 2.9em;
+        .testimonial {
+          flex: 0 0 calc(100% / 3);
+          border-radius: 10px;
+          overflow: hidden;
+        }
+      }
     }
   }
 }

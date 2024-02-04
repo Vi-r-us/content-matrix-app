@@ -1,4 +1,7 @@
+import CaseStudies from "./Components/CaseStudies";
+import Creatives from "./Components/Creatives";
 import FeaturedTestimonials from "./Components/FeaturedTestimonials";
+import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import LongVideoExamples from "./Components/LongVideoExamples";
 import Navbar from "./Components/Navbar";
@@ -14,11 +17,14 @@ function App() {
       <main className="page-content flex" direction="col">
         <Hero />
         <Partners />
+        <CaseStudies />
         <FeaturedTestimonials />
         <Testimonials />
         <LongVideoExamples />
         <ShortVideoExamples />
+        <Creatives />
       </main>
+      <Footer />
     </>
   );
 }

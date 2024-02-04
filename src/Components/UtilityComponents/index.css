@@ -32,10 +32,10 @@
 
 .yt-video {
   border-radius: 1em;
-}
-.yt-video.long-format-video {
   max-width: 1060px;
   width: 100%;
+}
+.long-format-video {
   aspect-ratio: 16 / 9;
   @media screen and (min-width: 480px) {
     width: 90%;
@@ -45,8 +45,6 @@
   }
 }
 
-.yt-video.short-format-video {
-  max-width: 1060px;
-  width: 100%;
+.short-format-video {
   aspect-ratio: 9 / 16;
 }

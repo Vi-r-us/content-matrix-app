@@ -1,0 +1,113 @@
+.case-studies-section {
+  display: grid;
+  place-content: center;
+  background-image: url("https://assets-global.website-files.com/657dc82e8097266132937458/6581de524c8bcb4b40ec630a_Frame%207%20(4).png"),
+    url("https://assets-global.website-files.com/657dc82e8097266132937458/6581de524c8bcb4b40ec630a_Frame%207%20(4).png");
+  background-position: 0 0, 0%;
+  background-repeat: no-repeat, repeat;
+  background-size: auto, cover;
+
+  .case-studies-wrapper {
+    display: grid;
+    row-gap: 3em;
+    column-gap: 2.5em;
+    padding-inline: 1em;
+    max-width: 1290px;
+    position: relative;
+  }
+
+  .case-study-texts {
+    gap: 1.5em;
+    background-image: url("https://assets-global.website-files.com/657dc82e8097266132937458/657dc82e80972661329374f5_Dotted.svg");
+    background-position: 0 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 2rem;
+      display: flex;
+      gap: 1em;
+
+      &::before {
+        content: "✌️";
+        width: 34px;
+        height: 34px;
+        background-color: rgba(217, 217, 217, 0.25);
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      line-height: 2.8rem;
+      span {
+        color: #51bcf7;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+
+    .work-with-us-btn {
+      margin-right: auto;
+      text-transform: initial;
+    }
+  }
+
+  .case-study-details {
+    gap: 1em;
+
+    .case-study {
+      gap: 2em;
+      background-color: rgba(25, 23, 50, 0.6);
+      border: 1px solid white;
+      border-radius: 1em;
+      padding: 2em 1.25em;
+      overflow: hidden;
+
+      h2 {
+        text-align: center;
+      }
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 2rem;
+      }
+      .article-format-video {
+        aspect-ratio: 16 / 9;
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-inline: 2em;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .case-studies-section {
+    .case-studies-wrapper {
+      padding-inline: auto;
+      grid-template-columns: 40% auto;
+      align-content: start;
+    }
+
+    .case-study-texts {
+      height: max-content;
+      position: sticky;
+      top: 10%;
+      /* margin-top: auto; */
+    }
+  }
+}

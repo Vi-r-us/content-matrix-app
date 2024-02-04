@@ -29,7 +29,10 @@ const Hero = () => {
       </div>
 
       <div className="hero-video flex" direction="col">
-        <YoutubeVideo videoURL="https://www.youtube.com/embed/VUDQL8B1Bb4?si=hqK2z0yxV5vT9oBi" />
+        <YoutubeVideo
+          className={"long-format-video"}
+          videoURL="https://www.youtube.com/embed/VUDQL8B1Bb4?si=hqK2z0yxV5vT9oBi"
+        />
         <div className="button-wrapper flex" direction="row">
           <Button className="gradient-btn" href="book-a-call">
             book a call
